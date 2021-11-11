@@ -99,19 +99,19 @@ connection.connect(function(error)
 // })
 
 
-// let sql = "DELETE FROM NOTAS WHERE fecha<2011-12-31"
-// connection.query(sql,function(error, resultado){
-//     if (error)
-//         console.log(error)
-//     else
-//         console.log("Dato borrado")
-//         console.log(resultado)
-// })
-let sql = "UPDATE NOTAS SET nota = 5 WHERE nota<5"
+let sql = "DELETE FROM NOTAS WHERE fecha<20111231"
 connection.query(sql,function(error, resultado){
     if (error)
         console.log(error)
     else
-        console.log("Dato actualizado")
+        console.log("Dato borrado")
         console.log(resultado)
 })
+// let sql = "UPDATE NOTAS SET nota = 5 WHERE nota<5"
+// connection.query(sql,function(error, resultado){
+//     if (error)
+//         console.log(error)
+//     else
+//         console.log("Dato actualizado")
+//         console.log(resultado)
+// })
